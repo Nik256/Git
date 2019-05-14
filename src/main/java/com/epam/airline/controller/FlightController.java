@@ -42,17 +42,6 @@ public class FlightController {
         return modelAndView;
     }
 
-    @GetMapping("/flight")
-    private ModelAndView createFlight() {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("/flight/flight");
-        modelAndView.addObject("aircrafts", aircraftService.findAll());
-        modelAndView.addObject("airports", airportService.findAll());
-        modelAndView.addObject("crews", crewService.getReadyCrew());
-        System.out.println("some text");
-        return modelAndView;
-    }
-
     @PostMapping("/create-flight")
     private ModelAndView createFlight(@RequestParam(value = "code") String code,
                                       @RequestParam(value = "aircraft") String aircraft,
