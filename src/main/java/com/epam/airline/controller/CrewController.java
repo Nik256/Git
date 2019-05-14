@@ -63,7 +63,9 @@ public class CrewController {
                                     @RequestParam(value = "member") List<String> memberCodes) {
         Crew crew = crewService.getCrewFromParams(0, code, status, memberCodes);
         crewService.createCrew(crew);
+        System.out.println("sdlkfsdfklkdhjflkjsd");
         ModelAndView modelAndView = new ModelAndView();
+        System.out.println("lksdjfalkdsjflks");
         modelAndView.setViewName("redirect:/crews");
         return modelAndView;
     }
