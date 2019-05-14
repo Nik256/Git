@@ -78,6 +78,7 @@ public class FlightController {
         modelAndView.addObject("aircrafts", aircraftService.findAll());
         modelAndView.addObject("airports", airportService.findAll());
         modelAndView.addObject("crews", crewService.getReadyCrew());
+        System.out.println("sdjflsdjfkl");
         return modelAndView;
     }
 
