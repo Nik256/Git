@@ -1,0 +1,52 @@
+.login-body {
+    background: url("../img/100planes.jpg") no-repeat fixed center center;
+    background-size: cover;
+}
+
+div.form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #f0f2f4;
+    border: 3px solid #f1f1f1;
+    padding: 16px;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    font-family: Raleway, Roboto, sans-serif;
+    font-size: 15px;
+    box-shadow: 5px 10px 20px #888888;
+}
+
+div#reg {
+    height: 480px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#login-button {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    padding: 14px 20px;
+    margin: 18px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.message {
+    text-align: center;
+    margin: auto;
+}
