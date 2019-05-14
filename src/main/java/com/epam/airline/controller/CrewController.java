@@ -68,19 +68,6 @@ public class CrewController {
         return modelAndView;
     }
 
-    @PostMapping("/edit-crew")
-    private ModelAndView editCrew(@RequestParam(value = "id") long id,
-                                  @RequestParam(value = "code") String code,
-                                  @RequestParam(value = "status") String status,
-                                  @RequestParam(value = "member") List<String> memberCodes) {
-        crewService.editPreviousMember(id);
-        Crew crew = crewService.getCrewFromParams(id, code, status, memberCodes);
-        crewService.editCrew(crew);
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("redirect:/crews");
-        return modelAndView;
-    }
-
     @GetMapping("/crew")
     private ModelAndView createCrew() {
         ModelAndView modelAndView = new ModelAndView();
