@@ -17,7 +17,7 @@
 
 --
 -- Table structure for table `aircraft`
---
+-- dfgdfg
 
 DROP TABLE IF EXISTS `aircraft`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
