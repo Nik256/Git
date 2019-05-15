@@ -16,7 +16,7 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `aircraft`
+-- Table structure for table `aircraft` fdgdfg
 -- dfgdfg
 
 DROP TABLE IF EXISTS `aircraft`;
